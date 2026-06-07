@@ -1,7 +1,7 @@
-import { GithubUser } from "./types.js";
+import { GithubUser, GithubRepo } from "./types.js";
 import { config } from "./config.js";
 
-export const getUserProfile = async (username: string): Promise<any> => {
+export const getUserProfile = async (username: string): Promise<GithubUser> => {
     try {
     
         const api = config.url;
@@ -11,19 +11,25 @@ export const getUserProfile = async (username: string): Promise<any> => {
             throw new Error("El nombre de usuario es obligatorio");
         }
 
-        console.log(api + username);
         const response = await fetch(api + username);
 
         const data = await response.json();
 
-        return data;
+        const newUser: GithubUser = {
+            login: data.login,
+            name: data.name,
+            bio: data.bio,
+            public_repos: data.public_repos
+        }
+
+        return newUser;
 
     } catch (error: any) {
         throw error;
     }
 }
 
-export const getUserRepos = async (username: string): Promise<any> => {
+export const getUserRepos = async (username: string): Promise<GithubRepo[]> => {
     try {
         const api = config.url;
         const token = config.githubToken;
@@ -32,12 +38,19 @@ export const getUserRepos = async (username: string): Promise<any> => {
             throw new Error("El nombre de usuario es obligatorio");
         }
 
-        console.log(api + username + "/repos");
         const response = await fetch(api + username + "/repos");
 
         const data = await response.json();
 
-        return data;
+        const newRepos: GithubRepo[] = data.map((e: any) => {
+            const repo: GithubRepo = {
+                name: e.name,
+                stargazers_count: e.stargazers_count
+            }
+            return repo
+        })
+
+        return newRepos;
     } catch (error: any) {
         throw error
     }

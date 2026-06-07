@@ -4,3 +4,8 @@ export interface GithubUser {
     bio: string | null,
     public_repos: number
 }
+
+export interface GithubRepo {
+    name: string,
+    stargazers_count: number
+}
