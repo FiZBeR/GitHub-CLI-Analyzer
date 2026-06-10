@@ -12,13 +12,20 @@ export const checkData = async (name: string): Promise<CacheData | null> => {
         //devolver respuesta
         if(info == null){
             return null;
-        } else {
-            return info;
         }
+        
+        //Obtener tiempos en milisegundos
+        const tiempoActual = Date.now();
+        const tiempoTranscurrido = tiempoActual - info.time;
+
+        if(tiempoTranscurrido < 3600000){ //3600000 tiempode una hora en milisegundos
+            return info
+        } else {
+            return null
+        }
+        
 
     } catch (error: any) {
         throw error;
     }
 }
-
-//export const transformData = async (): Promise

@@ -1,0 +1,133 @@
+{
+  "midudev": {
+    "time": 1781069307285,
+    "githubUser": {
+      "login": "midudev",
+      "name": "Miguel Ángel Durán",
+      "bio": "Te enseño Programación, IA y Desarrollo Web. Creador de contenido en Twitch y YouTube.",
+      "public_repos": 229
+    },
+    "githubRepos": [
+      {
+        "name": "100cosas.dev",
+        "stargazers_count": 98
+      },
+      {
+        "name": "accordion-menu",
+        "stargazers_count": 4
+      },
+      {
+        "name": "actas-2024",
+        "stargazers_count": 45
+      },
+      {
+        "name": "adventjs-issues",
+        "stargazers_count": 35
+      },
+      {
+        "name": "alg0.dev",
+        "stargazers_count": 172
+      },
+      {
+        "name": "algolia-pwa-ecommerce",
+        "stargazers_count": 27
+      },
+      {
+        "name": "algorithm-visualizer",
+        "stargazers_count": 11
+      },
+      {
+        "name": "ant-design",
+        "stargazers_count": 4
+      },
+      {
+        "name": "aprende-javascript-problemas",
+        "stargazers_count": 136
+      },
+      {
+        "name": "aprende-react-js",
+        "stargazers_count": 22
+      },
+      {
+        "name": "aprendesql.dev-issues",
+        "stargazers_count": 10
+      },
+      {
+        "name": "aprendiendo-electron",
+        "stargazers_count": 29
+      },
+      {
+        "name": "aprendiendo-react",
+        "stargazers_count": 8952
+      },
+      {
+        "name": "aprendiendogit.dev",
+        "stargazers_count": 64
+      },
+      {
+        "name": "aprendiendoreact.com",
+        "stargazers_count": 9
+      },
+      {
+        "name": "astro-5-dev-books",
+        "stargazers_count": 121
+      },
+      {
+        "name": "autoskills",
+        "stargazers_count": 5970
+      },
+      {
+        "name": "awesome-dev-tools",
+        "stargazers_count": 39
+      },
+      {
+        "name": "awesome-uses",
+        "stargazers_count": 5
+      },
+      {
+        "name": "better-svg",
+        "stargazers_count": 283
+      },
+      {
+        "name": "bigibai-2025",
+        "stargazers_count": 126
+      },
+      {
+        "name": "black-friday-app-autocomplete",
+        "stargazers_count": 23
+      },
+      {
+        "name": "bun-ai-api",
+        "stargazers_count": 65
+      },
+      {
+        "name": "bun-deploy-app",
+        "stargazers_count": 22
+      },
+      {
+        "name": "campanadas.dev",
+        "stargazers_count": 16
+      },
+      {
+        "name": "canirun.ai",
+        "stargazers_count": 15
+      },
+      {
+        "name": "caniwrap.com",
+        "stargazers_count": 31
+      },
+      {
+        "name": "cards",
+        "stargazers_count": 6
+      },
+      {
+        "name": "chat-gpt-plugins-javascript",
+        "stargazers_count": 60
+      },
+      {
+        "name": "chat-hackathon",
+        "stargazers_count": 22
+      }
+    ]
+  }
+}
